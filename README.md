@@ -65,7 +65,7 @@ const changjoon = {
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://portfolio-8t7o.vercel.app/projects/carfortune" title="오늘의 액땜 케이스 스터디"><img src="assets/carfortune.jpg" alt="오늘의 액땜 첫 화면" /></a>
+      <a href="https://portfolio-8t7o.vercel.app/projects/carfortune" title="오늘의 액땜 케이스 스터디"><img src="assets/aekkaem.jpg" alt="오늘의 액땜 첫 화면" /></a>
       <h3>오늘의 액땜</h3>
       <sub>Pleos Connect 차량용 운세 앱 | 2026.08 ~ 진행 중 | 4인 팀, 기획, 디자인, 콘텐츠 기획</sub>
       <p>AI로 초안을 만든 콘텐츠 400건의 검증 대부분을 맡아, 중복 검사와 법규 수치 교차 확인으로 근접 중복 26건과 사실 오류 4건을 걸러냈습니다.</p>
