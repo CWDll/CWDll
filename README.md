@@ -16,8 +16,8 @@
 const changjoon = {
   role: "Frontend Engineer",
   main: ["TypeScript", "React", "Next.js"],
-  building: ["PitNow (2026.03 ~)", "CarFortune (2026.08 ~)"],
-  career: "크루베이션 Frontend Engineer (2025.09 ~ 2026.02)",
+  building: ["매치유 MATCHU (2026.09 ~)", "PitNow (2026.03 ~)"],
+  career: "크루베이션 Frontend Engineer (2025.09 ~ 2026.03)",
   education: "동국대학교 불교학부, 컴퓨터공학 복수전공 (2026.02 졸업)",
   awards: "2023 G-HOP 대학창업연합 경진대회 대상 외 3건",
   portfolio: "https://portfolio-8t7o.vercel.app",
@@ -28,6 +28,23 @@ const changjoon = {
 
 <table>
   <tr>
+    <td width="50%" valign="top">
+      <a href="https://portfolio-8t7o.vercel.app/projects/matchu" title="매치유 MATCHU 케이스 스터디"><img src="assets/matchu.jpg" alt="매치유 MATCHU" /></a>
+      <h3>매치유 MATCHU</h3>
+      <sub>동네 가게와 지역 릴스 크리에이터를 잇는 마켓플레이스 | 2026.09 ~ 진행 중 | 외주, 1인</sub>
+      <p>말로 받은 요구를 기획서로 쓰고 설계, 디자인, 개발, 배포를 혼자 진행하고 있습니다. 반복되는 구현은 Claude에 맡기고, 정책과 유저 플로우는 직접 정합니다.</p>
+      <details>
+        <summary><b>더 보기</b></summary>
+        <ul>
+          <li>협업은 캠페인 선정과 직접 섭외 두 경로로 시작하고, 두 경로 모두 돈을 내는 브랜드가 선정과 가격을 결정합니다. 결제가 끝나야 제작이 시작됩니다.</li>
+          <li>결제 크레딧과 성장 포인트 원장을 나누고, 금전 테이블은 검증된 SQL RPC로만 바뀌게 했습니다.</li>
+          <li>도메인 규칙이 운영 SQL과 데모용 TS 엔진에 따로 있어 QA 버그 18건 중 11건이 둘이 갈라져서 났습니다. 데모도 PGlite에서 운영과 같은 마이그레이션과 RPC로 돌게 바꿨습니다.</li>
+          <li>"AI가 만든 화면 같다"는 클라이언트 피드백을 원인 일곱 가지로 나눠 고치고, 색 토큰과 휴대폰 기준값을 디자인 규칙 문서로 남겼습니다.</li>
+        </ul>
+      </details>
+      <code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>PGlite</code> <code>Playwright</code>
+      <p><a href="https://portfolio-8t7o.vercel.app/projects/matchu">케이스 스터디</a> | <a href="https://reelnote-v1-marketplace.vercel.app">서비스</a></p>
+    </td>
     <td width="50%" valign="top">
       <a href="https://portfolio-8t7o.vercel.app/projects/pitnow" title="PitNow 케이스 스터디"><img src="assets/pitnow.jpg" alt="PitNow" /></a>
       <h3>PitNow</h3>
@@ -45,25 +62,25 @@ const changjoon = {
       <code>Next.js</code> <code>TypeScript</code> <code>Supabase</code> <code>Toss Payments</code> <code>Playwright</code>
       <p><a href="https://portfolio-8t7o.vercel.app/projects/pitnow">케이스 스터디</a> | <a href="https://pit-now.vercel.app">서비스</a></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
-      <a href="https://portfolio-8t7o.vercel.app/projects/carfortune" title="CarFortune 케이스 스터디"><img src="assets/carfortune.jpg" alt="CarFortune" /></a>
-      <h3>CarFortune</h3>
-      <sub>Pleos Connect 차량용 운세 앱 | 2026.08 ~ 진행 중 | 개인 프로젝트</sub>
-      <p>기어가 P가 아니면 화면을 잠그고, AI로 초안을 만든 콘텐츠 400건을 중복 검사와 법규 수치 교차 확인으로 검증했습니다.</p>
+      <a href="https://portfolio-8t7o.vercel.app/projects/carfortune" title="오늘의 액땜 케이스 스터디"><img src="assets/carfortune.jpg" alt="오늘의 액땜 첫 화면" /></a>
+      <h3>오늘의 액땜</h3>
+      <sub>Pleos Connect 차량용 운세 앱 | 2026.08 ~ 진행 중 | 4인 팀, 기획, 디자인, 콘텐츠 기획</sub>
+      <p>AI로 초안을 만든 콘텐츠 400건의 검증 대부분을 맡아, 중복 검사와 법규 수치 교차 확인으로 근접 중복 26건과 사실 오류 4건을 걸러냈습니다.</p>
       <details>
         <summary><b>더 보기</b></summary>
         <ul>
-          <li>현대자동차그룹 차량 플랫폼 Pleos Connect에서 동작합니다. 기획, 디자인, 개발을 혼자 맡았습니다.</li>
-          <li>웹 프로토타입으로 차량 화면 규격(Connect-S, 1700x1184dp)에서 흐름을 먼저 검증했습니다.</li>
-          <li>자카드 유사도로 근접 중복 26건, 도로교통공단과 국가법령정보센터 자료 대조로 사실 오류 4건을 걸러냈습니다.</li>
-          <li>Android 앱은 mock 빌드와 Pleos 빌드를 나눴습니다.</li>
+          <li>현대자동차그룹 차량 플랫폼 Pleos Connect에서 동작하고, Pleos 앱 마켓에 제출해 심사 중입니다.</li>
+          <li>중복은 자카드 유사도로, 과태료와 벌점 같은 수치는 도로교통공단과 국가법령정보센터 자료로 확인했습니다.</li>
+          <li>출시 준비 과정에서 포티투닷 담당자와 직접 소통했습니다.</li>
+          <li>네 명이 각자 시제품을 만들어 하나를 고르는 방식이었고, 제가 혼자 만든 시제품(웹 프로토타입과 Android Automotive 앱)은 채택되지 않았습니다. 출시판 코드는 다른 팀원이 작성했습니다.</li>
         </ul>
       </details>
-      <code>Next.js</code> <code>TypeScript</code> <code>Kotlin</code> <code>Android Automotive</code>
-      <p><a href="https://portfolio-8t7o.vercel.app/projects/carfortune">케이스 스터디</a></p>
+      <code>Pleos Connect</code> <code>Android Automotive</code> <code>Kotlin</code> <code>Next.js</code>
+      <p><a href="https://portfolio-8t7o.vercel.app/projects/carfortune">케이스 스터디</a> | <a href="https://aekkaem.myfourcut.com">공개 사이트</a></p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <a href="https://portfolio-8t7o.vercel.app/projects/notelass" title="Notelass 케이스 스터디"><img src="assets/notelass.jpg" alt="Notelass" /></a>
       <h3>Notelass</h3>
@@ -80,22 +97,6 @@ const changjoon = {
       <code>React</code> <code>Redux Toolkit</code> <code>styled-components</code>
       <p><a href="https://portfolio-8t7o.vercel.app/projects/notelass">케이스 스터디</a> | <a href="https://github.com/CWDll/notelass">저장소</a></p>
     </td>
-    <td width="50%" valign="top">
-      <img src="assets/hyeyum.jpg" alt="혜윰모듈 코드 작성 화면" title="코드를 드래그해 질문하는 화면" />
-      <h3>혜윰모듈</h3>
-      <sub>라이브 코딩 실습 수업 플랫폼 | 2024.06 ~ 2024.08 | 산학연계, 4인 팀</sub>
-      <p>학생 50~60명을 많아야 조교 2명이 한 명씩 확인하던 실습 수업을 바꾸자고 제안했습니다. 코드를 제출하면 실행 결과와 제출 시각이 함께 남습니다.</p>
-      <details>
-        <summary><b>더 보기</b></summary>
-        <ul>
-          <li>코드에서 궁금한 부분을 드래그하면 그 영역이 채팅방에 들어가 바로 질문할 수 있습니다(웹소켓).</li>
-          <li>수업 중 오간 질문과 답변을 요약해 두고, 비슷한 질문이 나오면 그 요약으로 바로 답합니다.</li>
-          <li>코드 작성 화면과 디자인 시스템을 맡았고, Monaco Editor를 화면에 맞게 고쳐 썼습니다.</li>
-          <li>담당 교수님이 2~3주 동안 실제 실습 수업에서 사용했습니다.</li>
-        </ul>
-      </details>
-      <code>React</code> <code>Monaco Editor</code> <code>WebSocket</code>
-    </td>
   </tr>
 </table>
 
@@ -105,6 +106,7 @@ const changjoon = {
 
 | 프로젝트 | 기간 | 내용 |
 | --- | --- | --- |
+| 혜윰모듈 | 2024.06 ~ 2024.08 | 라이브 코딩 실습 수업 플랫폼. 제출한 코드의 실행 결과와 제출 시각이 함께 남고, 코드를 드래그해 채팅으로 바로 질문합니다. 코드 작성 화면과 디자인 시스템을 맡았고, 담당 교수님이 2~3주 동안 실제 실습 수업에서 사용했습니다. 산학연계, 4인 팀 |
 | 하트시그널 | 2023.10 | 대학 축제 익명 매칭과 채팅. 같은 인원수의 다른 성별 그룹만 보여 주는 매칭 조건을 구현했고, 축제 2일 동안 약 2,400명이 사용했습니다. GDGoC DGU, 10인 팀 |
 | [아파투두](https://github.com/CWDll/2024-1-CECD1-isReal-4) | 2024 | 신축 아파트 하자 신청과 관리. 승인 내역을 블록체인에 기록합니다. 종합설계, 4인 팀. 같은 주제의 논문으로 우수논문상 |
 | [항공 물류 스케줄 관리](https://github.com/CWDll/AirlineTransportFront) | 2024 | 화주와 항공사, 세관이 함께 쓰는 항공 화물 스케줄 관리. 소프트웨어공학, 6인 팀 |
@@ -115,7 +117,8 @@ const changjoon = {
 
 | 기간 | 소속 | 역할 |
 | --- | --- | --- |
-| 2025.09 ~ 2026.02 | 크루베이션 | Frontend Engineer. AI 취업 준비 서비스 텔링 개발과 운영 |
+| 2026.09 ~ | 매치유 MATCHU (외주) | 기획, 디자인, 개발, 배포 |
+| 2025.09 ~ 2026.03 | 크루베이션 | Frontend Engineer. AI 취업 준비 서비스 텔링 개발과 운영 |
 | 2023.09 ~ 2024.08 | GDGoC DGU 1기 | 프론트엔드 파트원, Solution Challenge 참여 |
 | 2023.07 ~ 2024.02 | 대학 연합 창업동아리 | 프론트엔드 팀장, Notelass 개발 |
 | 2023.05 ~ 2024.01 | Farm-System 2기 | 프론트엔드 파트원 |
@@ -132,6 +135,7 @@ const changjoon = {
 
 ## Writing
 
+- ["AI가 만든 화면 같다"는 피드백을 원인 일곱 가지로 나눠 고쳤습니다](https://portfolio-8t7o.vercel.app/writing/matchu-ai-look)
 - [데이터 이상은 규칙으로 찾고, AI에게는 정리만 맡겼습니다](https://portfolio-8t7o.vercel.app/writing/ops-anomaly-daily-check)
 - [예약 겹침을 코드가 아니라 데이터베이스에서 막은 이유](https://portfolio-8t7o.vercel.app/writing/booking-overlap-constraint)
 - [모달을 닫을 때마다 목록 전체를 다시 불러오던 문제](https://portfolio-8t7o.vercel.app/writing/list-refetch-to-row-sync)
@@ -141,7 +145,7 @@ const changjoon = {
 
 <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,redux,tailwind,styledcomponents,supabase,postgres,kotlin,vercel,figma&perline=12" alt="TypeScript, JavaScript, React, Next.js, Redux, Tailwind CSS, styled-components, Supabase, PostgreSQL, Kotlin, Vercel, Figma" />
 
-<sub>그 밖에 React Query, Zustand, Recoil, Playwright, Toss Payments</sub>
+<sub>그 밖에 React Query, Zustand, Recoil, Zod, PGlite, Playwright, Toss Payments</sub>
 
 <br />
 
